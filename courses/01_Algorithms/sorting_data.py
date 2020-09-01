@@ -140,6 +140,6 @@ def partition(data_values, first, last):
 
 list_3 = [6, 78, 93, 22, 26, 63, 15, 38, 34, 41, 13]
 
-print(list_3)
+# print(list_3)
 quicksort(list_3, 0, len(list_3) - 1)
-print(list_3)
+# print(list_3)
