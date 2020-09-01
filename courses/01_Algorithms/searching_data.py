@@ -57,3 +57,22 @@ list_2 = [4, 7, 22, 53, 75, 79, 86, 103, 122]
 
 # print(binary_search(86, list_2))
 # print(binary_search(24, list_2))
+
+# ----- Determine if sorted ----- # 
+
+def is_sorted(list):
+    # TODO Brute force it
+    for i in range(len(list) - 1):
+        if list[i] > list[i + 1]:
+            return False
+
+    return True
+
+def is_sorted_py(list):
+    # TODO Pythonic way
+    
+    return all(list[i] <= list[i + 1] for i in range(len(list) - 1))
+
+
+print(is_sorted_py(list_1)) # Not
+print(is_sorted_py(list_2)) # Sorted
